@@ -36,8 +36,8 @@ class Token {
     public static final int LP = 4; // Left parenthesis
     public static final int RP = 5; // Right parenthesis
 
-    public int type;
-    public String lexeme;
+    public int type; //type of token
+    public String lexeme; //actual value of the token
 
     public Token(int type, String lexeme) {
         this.type = type;
@@ -65,6 +65,7 @@ class Tokenizer {
         int e; // ending index of a token
         int n = str.length();
 
+        //Used the IntelliJ auto system to make this into an enhanced switch
         for (;;) {
             if (i >= n) {
                 return;
@@ -77,12 +78,15 @@ class Tokenizer {
                     }
                 }
                 case '1', '2', '3', '4', '5', '6', '7', '8', '9' -> {
-                    e = extractLiteral(str, i + 1);
+                    e = extractLiteral(str, i + 1); //extracts integer literal from a string,
+                    // starting from the given index i and returns the index of the character following the literal.
                     tokens.add(new Token(Token.IL, str.substring(i, e)));
                     i = e;
                 }
                 case 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' -> {
-                    e = extractIdentifier(str, i + 1);
+                    e = extractIdentifier(str, i + 1);//extracts an identifier
+                    //from a string, starting from the given index i and
+                    // returns the index of the character following the identifier.
                     tokens.add(new Token(Token.ID, str.substring(i, e)));
                     i = e;
                 }

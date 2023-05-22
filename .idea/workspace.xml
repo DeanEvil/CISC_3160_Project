@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54893eb7-54dd-4cab-909b-5eb9ad1faaa7" name="Changes" comment="Finished tokenizer and parser classes. Created first iteration of Interpreter class to fulfill project assignment.">
-      <change afterPath="$PROJECT_DIR$/src/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExpParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tokenizer.java" beforeDir="false" />
+    <list default="true" id="54893eb7-54dd-4cab-909b-5eb9ad1faaa7" name="Changes" comment="Merged the three java files together so that a file argument can be passed to tokenize and parse its expressions.">
+      <change afterPath="$PROJECT_DIR$/src/ExpParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Token.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tokenizer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +30,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Q8TZv68WEroG53nrQdTuaK3q4K" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
@@ -71,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684734499603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merged the three java files together so that a file argument can be passed to tokenize and parse its expressions.">
+      <created>1684735842578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684735842578</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,7 +96,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Finished tokenizer and parser classes. Created first iteration of Interpreter class to fulfill project assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished tokenizer and parser classes. Created first iteration of Interpreter class to fulfill project assignment." />
+    <MESSAGE value="Merged the three java files together so that a file argument can be passed to tokenize and parse its expressions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged the three java files together so that a file argument can be passed to tokenize and parse its expressions." />
   </component>
 </project>
